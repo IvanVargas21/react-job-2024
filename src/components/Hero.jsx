@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const Hero = () => {
+//default props
+const Hero = ({title='Become a React Dev', subtitle='Find the React  job that fits your skill set'}) => {
   return (
     <div>
       {/* Hero  */}
@@ -12,16 +13,17 @@ const Hero = () => {
                 <h1
                     className="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl"
                 >
-                Become a React Dev
+                {title}
                 </h1>
                 <p className="my-4 text-xl text-white">
-                    Find the React job that fits your skills and needs
+                   {subtitle}
                 </p>
             </div>
         </div>
       </section>
     </div>
   )
+  
 }
 
 export default Hero
